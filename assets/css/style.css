@@ -72,7 +72,7 @@ b{
 	background-color: #2574FD;
 	margin-left: 7px;
 	font-weight: bold;
-	font-size: larger;
+	font-size: x-large;
 }
 .userScore{
 	background-color: #F7FAB2;
@@ -81,5 +81,5 @@ b{
 	position: absolute;
 	float: left;
 	clear: both;
-	margin-top: 42%;
+	margin-top: 42.5%;
 }
