@@ -1,0 +1,34 @@
+.title{
+	background-color: orange;
+	padding: 50px 50px 50px 50px;
+	margin-right: 75%;
+	margin-top: 7px;
+	margin-left: 7px;
+	font-weight: bolder;
+	font-size: 200%;
+}
+p{
+	background-color: #30F2EC;
+	margin-left: 7px;
+	margin-top: 7px;
+	margin-right: 65%;
+	padding: 50px 25px 200px 10px; 
+	height: 300px;
+	font-weight: bold;
+	font-size: larger;
+}
+.computerScore{
+	background-color: #56DE38;
+	margin-right: 60%;
+	padding: 20px 200px 0px 15px;
+	position: absolute;
+	float: left;
+	clear: both;
+}
+.tracker{
+	background-color: #B7B904;
+	position: absolute;
+	float: right;
+	margin-left: 25%;
+	padding: 20px 100px 0px 15px;
+}
