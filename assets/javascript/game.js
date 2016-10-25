@@ -40,6 +40,30 @@ function checkScore() {
 	};
 };
 
+//start game
+function startGame(){
+	//computer choose random number
+		var numb1 = randomNumber(19,120);
+		computerNumber = numb1;
+		$('#compNumb').text(computerNumber);
+
+	//diamond 1 choosen
+		var numb2 = randomNumber(1,12);
+		diamond1 = numb2;
+
+	//diamond 2 choosen
+		var numb3 = randomNumber(1,12);
+		diamond2 = numb3;
+
+	//diamond 3 choosen
+		var numb4 = randomNumber(1,12);
+		diamond3 = numb4;
+
+	//diamond 4 choosen
+		var numb5 = randomNumber(1,12);
+		diamond4 = numb5;
+
+}
 
 
-});
+
