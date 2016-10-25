@@ -3,6 +3,7 @@
 <head>
 	<title>RPG</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body background="assets/images/congruent_pentagon.png">
@@ -26,7 +27,18 @@
 <div>
 	<section>
 		<p class="computerScore">CompScore:</p>
-		<p class="tracker"><br><br><br><br>Wins: <br><br><br><br><br> Losses: </p>
+		<div class="scoreWin">
+			wins
+		</div>
+		<div class="win" id="win">
+			0
+		</div>
+		<div class="scoreLoss">
+			loss
+		</div>
+		<div class="loss" id="loss">
+			0
+		</div>
 	</section>
 </div>
 
@@ -54,6 +66,8 @@
 <div>
 	<p class="userScore">UserScore:</p>
 </div>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>
