@@ -32,11 +32,13 @@ function checkScore() {
 	if (userScore == computerNumber) {
 	win++;
 	$('#win').text(win);
+	reset();
 	};
 
 	if (userScore > computerNumber) {
 		loss++;
 		$('#loss').text(loss);
+		reset();
 	};
 };
 
@@ -73,25 +75,27 @@ $("#mond1").click(function(){
 });
 
 //click diamond 2
-$("mond2").click(function(){
+$("#mond2").click(function(){
 	userScore += diamond2;
 	$('.userScore').text(userScore);
 	checkScore();
 });
 
 //click diamond 3 
-$("mond3").click(function(){
+$("#mond3").click(function(){
 	userScore += diamond3;
 	$('.userScore').text(userScore);
 	checkScore();
 });
 
 //click diamond 4
-$("mond4").click(function(){
+$("#mond4").click(function(){
 	userScore += diamond4;
 	$('.userScore').text(userScore);
 	checkScore();
 });
 
 startGame();
+
+});
 
