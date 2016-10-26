@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
 //Global varibales
-var wins = 0;
-var losses = 0;
+var win = 0;
+var loss = 0;
 var computerNumber = 0;
 var diamond1 = 0;
 var diamond2 = 0;
@@ -11,9 +11,9 @@ var diamond4 = 0;
 var userScore = 0;
 
 //generate random numbers 
-function randomNumber(min.max){
+function randomNumber(min,max){
 	return Math.floor(Math.random() *(max - min + 1) + min);
-}
+};
 
 //reset game function
 function reset() {
@@ -35,7 +35,7 @@ function checkScore() {
 	};
 
 	if (userScore > computerNumber) {
-		losses++;
+		loss++;
 		$('#loss').text(loss);
 	};
 };
@@ -65,5 +65,33 @@ function startGame(){
 
 }
 
+//click diamond 1
+$("#mond1").click(function(){
+	userScore += diamond1;
+	$('.userScore').text(userScore);
+	checkScore();
+});
 
+//click diamond 2
+$("mond2").click(function(){
+	userScore += diamond2;
+	$('.userScore').text(userScore);
+	checkScore();
+});
+
+//click diamond 3 
+$("mond3").click(function(){
+	userScore += diamond3;
+	$('.userScore').text(userScore);
+	checkScore();
+});
+
+//click diamond 4
+$("mond4").click(function(){
+	userScore += diamond4;
+	$('.userScore').text(userScore);
+	checkScore();
+});
+
+startGame();
 

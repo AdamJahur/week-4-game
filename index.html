@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>RPG</title>
+	<title>Crystal Collector Game</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style1.css">
 </head>
 <body background="assets/images/congruent_pentagon.png">
 
@@ -25,17 +25,21 @@
 </div>
  
 <div>
-	<section>
+	<section id="computerScore">
 		<div class="computerScore">CompScore:</div>
 		<div class="compNumb" id="compNumb">0</div>
+	</section>	
+</div>		
+<div>
+	<section id="tracker">
 		<div class="scoreWin">
-			wins
+			Wins
 		</div>
 		<div class="win" id="win">
 			0
 		</div>
 		<div class="scoreLoss">
-			loss
+			Loss
 		</div>
 		<div class="loss" id="loss">
 			0
@@ -64,8 +68,8 @@
 	</section>
 </div>
 
-<div>
-	<p class="userScore">UserScore:</p>
+<div class="userScore">
+	<strong>UserScore:</strong>
 </div>
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
